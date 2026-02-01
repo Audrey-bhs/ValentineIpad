@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Valentine</title>
+		<style>
+			body{background-color:#ffe8ea; text-align:center;font-family: system-ui, -apple-system, BlinkMacSystemFont,
+	             "Segoe UI", "Apple Color Emoji",
+	             "Segoe UI Emoji", "Noto Color Emoji", sans-serif;}
+			h1{color:#E02787;}
+			.image{margin-top:20px; max-width:300px;}
+			.bouton{background-color:#fba5c5;border-radius:5px;font-size:20px;padding: 10px 20px;}
+			.bouton:hover{background-color:hotpink;font-size:30px;}
+			.secret{background-color:#fba5c5;padding:40px;margin:40px auto;max-width:600px;font-size:18px;line-height:1.6;border-radius:15px;text-align:left;}
+			.enveloppe{font-size:40px;}
+		</style>
+	</head>
+	
+	<body>
+		<h1> ðŸŽ€ HELLO THERE ðŸŽ€ </h1>
+		<h2 id="mot"> Would you be my Valentine ?</h2>
+		
+		<div class="image">
+			<img id="img-chat" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2hhc3R4cjhsem1oNTJ2Nzc4eXJoZG91N25kbXJjbHRraWNhcnBsayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/901mxGLGQN2PyCQpoc/giphy.gif">
+		</div>
+		
+		<br>
+		<div>
+			<button class="bouton" onclick="changeImage('YES')">YES</button> 
+			&nbsp;&nbsp;
+			<button class="bouton" onclick="changeImage('NO')">NO</button>
+		</div>
+		<br>
+		<div><span class="enveloppe">ðŸ’Œ</span></div>
+		
+		<p class="secret" id="secret">
+			XOXO - A ðŸŒ»ðŸŒ»ðŸŒ»
+		</p>
+		
+		<script>
+			function changeImage(choice) {
+				const img=document.getElementById('img-chat');
+				const mot=document.getElementById('mot');
+				const secret=document.getElementById('secret');
+				if(choice=='YES') {
+					img.src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExODBzY214bDQwZ2NjemFkeXpwNHg2aWFzcmR2cHhjdWN0ODQ5cDE1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D9j761FH8SYJLyW9WO/giphy.gif";
+					mot.textContent = "Yay !! I LOVE YOU so much ðŸ’–";
+					secret.innerHTML = "Coucou my Adrian, <br>I just wanna say how much you mean to me.<br>Thank you for being so patient with me and for supporting me. You're honestly the most amazing person I know.<br>When I first met you I didn't know you'd become this important to me. Like we use to be strangers, now you're somebody who I can't go one day without talking to. I missed you everyday, and miss you more and more now. (You're the only person I wanna get to know, even if you're british guy lmao). I may have found my crazy partner, 'who knows ?' <br>I love you so much. <br>I can't wait to see you in 2 weeks omg. <br>I love you. <br>I love you.<br> I love you.<br>ðŸ’—";
+				} else if(choice=='NO') {
+					img.src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2hvb213aTJuYXBvYmVwdDZsNjhidTExbnRra2V5ZTRvMDNwYzU5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9KI8vyCCAOqHbcMYd2/giphy.gif";
+					mot.textContent = "Are you sure.... ??";
+					secret.textContent = ">:(((";
+				}
+			}
+		</script>
+		
+	</body>
+</html>
+
 
